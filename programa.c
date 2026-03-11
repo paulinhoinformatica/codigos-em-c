@@ -1,6 +1,6 @@
 #include <stdio.h>
 
 int main() {
-    printf("salve\n");
+    printf("sve\n");
     return 0;
 }
