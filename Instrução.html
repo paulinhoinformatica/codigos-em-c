@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INSTRUÇÃO</title>
+    <link rel="stylesheet" href="Instrução.css">
+</head>
+
+<body>
+    <center>
+        <h1>INFORMATICA</h1><br><br>
+    </center>
+
+    <table align="center" width="900">
+        <tr>
+            <td>
+
+                <center>
+                    <h2>INSTRUÇÕES À PROGRAMAÇÃO EM C</h2>
+                </center>
+
+                <h3>O que é a Linguagem C?</h3>
+
+                <p>
+                    A linguagem C é uma das linguagens de programação mais utilizadas no mundo.
+                    Ela é rápida, eficiente e serviu de base para diversas outras linguagens,
+                    como C++, C# e Java.
+                </p>
+
+                <h3>Estrutura Básica</h3>
+
+                <pre>
+#include &lt;stdio.h&gt;
+
+int main()
+{
+    printf("Olá Mundo!");
+
+    return 0;
+}
+</pre>
+
+                <p>
+                    <b>#include &lt;stdio.h&gt;</b> - Biblioteca responsável pelas funções de entrada e saída de dados.
+                </p>
+
+                <p>
+                    <b>int main()</b> - Função principal do programa. Todo programa em C começa sua execução por ela.
+                </p>
+
+                <p>
+                    <b>printf()</b> - Função utilizada para exibir mensagens na tela.
+                </p>
+
+                <p>
+                    <b>return 0;</b> - Indica que o programa foi encerrado corretamente.
+                </p>
+
+                <hr>
+
+                <h3>Variáveis</h3>
+
+                <p>
+                    Variáveis armazenam informações na memória para serem utilizadas durante a execução do programa.
+                </p>
+
+                <pre>
+int idade = 18;
+float altura = 1.75;
+char letra = 'A';
+</pre>
+
+                <p><b>int</b> - Armazena números inteiros.</p>
+                <p><b>float</b> - Armazena números com casas decimais.</p>
+                <p><b>char</b> - Armazena um único caractere.</p>
+
+                <hr>
+
+                <h3>Tipos de Dados</h3>
+
+                <table border="1" width="100%">
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>int</td>
+                        <td>Números inteiros</td>
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                        <td>Números decimais</td>
+                    </tr>
+                    <tr>
+                        <td>char</td>
+                        <td>Caracteres</td>
+                    </tr>
+                    <tr>
+                        <td>double</td>
+                        <td>Maior precisão decimal</td>
+                    </tr>
+                </table>
+
+                <hr>
+
+                <h3>Entrada de Dados</h3>
+
+                <pre>
+int idade;
+
+printf("Digite sua idade: ");
+scanf("%d", &idade);
+</pre>
+
+                <p>
+                    <b>scanf()</b> - Função utilizada para receber informações digitadas pelo usuário.
+                </p>
+
+                <p>
+                    <b>%d</b> - Formato utilizado para números inteiros.
+                </p>
+
+                <p>
+                    <b>&idade</b> - Indica o endereço da variável onde o valor digitado será armazenado.
+                </p>
+
+                <hr>
+
+                <h3>Estruturas Condicionais</h3>
+
+                <pre>
+if(idade >= 18)
+{
+    printf("Maior de idade");
+}
+else
+{
+    printf("Menor de idade");
+}
+</pre>
+
+                <p>
+                    <b>if</b> - Executa um bloco de código se a condição for verdadeira.
+                </p>
+
+                <p>
+                    <b>else</b> - Executa um bloco de código se a condição for falsa.
+                </p>
+
+                <p>
+                    <b>>=</b> - Operador que significa "maior ou igual".
+                </p>
+
+                <hr>
+
+                <h3>Estruturas de Repetição</h3>
+
+                <h4>For</h4>
+
+                <pre>
+for(int i = 1; i <= 5; i++)
+{
+    printf("%d", i);
+}
+</pre>
+
+                <p>
+                    O <b>for</b> é utilizado quando sabemos quantas vezes uma repetição será executada.
+                </p>
+
+                <p>
+                    <b>int i = 1</b> - Valor inicial.
+                </p>
+
+                <p>
+                    <b>i <= 5</b> - Condição para continuar repetindo.
+                </p>
+
+                <p>
+                    <b>i++</b> - Incrementa 1 ao valor da variável.
+                </p>
+
+                <h4>While</h4>
+
+                <pre>
+int i = 1;
+
+while(i <= 5)
+{
+    printf("%d", i);
+    i++;
+}
+</pre>
+
+                <p>
+                    O <b>while</b> executa o bloco de código enquanto a condição for verdadeira.
+                </p>
+
+                <hr>
+
+                <h3>Funções</h3>
+
+                <pre>
+int soma(int a, int b)
+{
+    return a + b;
+}
+</pre>
+
+                <p>
+                    Funções são blocos de código criados para realizar tarefas específicas.
+                </p>
+
+                <p>
+                    <b>return</b> retorna um valor para quem chamou a função.
+                </p>
+
+                <hr>
+
+                <h3>Vetores</h3>
+
+                <pre>
+int numeros[5] = {10, 20, 30, 40, 50};
+</pre>
+
+                <p>
+                    Vetores permitem armazenar vários valores do mesmo tipo em uma única variável.
+                </p>
+
+                <p>
+                    Neste exemplo, o vetor possui 5 posições.
+                </p>
+
+                <hr>
+
+                <h3>Comentários</h3>
+
+                <pre>
+// Comentário de uma linha
+
+/*
+Comentário
+de várias linhas
+*/
+</pre>
+
+                <p>
+                    Comentários servem para explicar o código e não são executados pelo compilador.
+                </p>
+
+                <p>
+                    <b>//</b> cria um comentário de uma linha.
+                </p>
+
+                <p>
+                    <b>/* */</b> cria comentários com várias linhas.
+                </p>
+            </td>
+        </tr>
+    </table><br><br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <table align="center" width="900">
+        <tr>
+            <td>
+                <center>
+                    <h2>INSTRUÇÕES À PROGRAMAÇÃO EM PYTHON</h2>
+                </center>
+
+                <h3>O que é Python?</h3>
+
+                <p>
+                    Python é uma linguagem de programação de alto nível, conhecida por sua
+                    simplicidade e facilidade de aprendizado. Ela é muito utilizada em áreas
+                    como desenvolvimento web, automação, inteligência artificial, análise de
+                    dados e criação de aplicativos.
+                </p>
+
+                <hr>
+
+                <h3>Estrutura Básica</h3>
+
+                <pre>
+print("Olá Mundo!")
+</pre>
+
+                <p>
+                    <b>print()</b> - Função utilizada para exibir mensagens na tela.
+                </p>
+
+                <p>
+                    Diferente da linguagem C, Python não necessita da função main() nem de
+                    bibliotecas para exibir mensagens simples.
+                </p>
+
+                <hr>
+
+                <h3>Variáveis</h3>
+
+                <p>
+                    Variáveis são utilizadas para armazenar informações na memória.
+                </p>
+
+                <pre>
+idade = 18
+altura = 1.75
+nome = "João"
+</pre>
+
+                <p>
+                    Em Python não é necessário informar o tipo da variável.
+                </p>
+
+                <p>
+                    O próprio Python identifica automaticamente se o valor é um número,
+                    texto ou decimal.
+                </p>
+
+                <hr>
+
+                <h3>Tipos de Dados</h3>
+
+                <table border="1" width="100%">
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>int</td>
+                        <td>Números inteiros</td>
+                    </tr>
+                    <tr>
+                        <td>float</td>
+                        <td>Números decimais</td>
+                    </tr>
+                    <tr>
+                        <td>str</td>
+                        <td>Textos</td>
+                    </tr>
+                    <tr>
+                        <td>bool</td>
+                        <td>Verdadeiro ou falso</td>
+                    </tr>
+                </table>
+
+                <hr>
+
+                <h3>Entrada de Dados</h3>
+
+                <pre>
+nome = input("Digite seu nome: ")
+</pre>
+
+                <p>
+                    <b>input()</b> - Função utilizada para receber informações digitadas pelo usuário.
+                </p>
+
+                <p>
+                    O valor digitado será armazenado na variável <b>nome</b>.
+                </p>
+
+                <hr>
+
+                <h3>Estruturas Condicionais</h3>
+
+                <pre>
+idade = 18
+
+if idade >= 18:
+    print("Maior de idade")
+else:
+    print("Menor de idade")
+</pre>
+
+                <p>
+                    <b>if</b> - Executa um bloco de código caso a condição seja verdadeira.
+                </p>
+
+                <p>
+                    <b>else</b> - Executa um bloco de código caso a condição seja falsa.
+                </p>
+
+                <p>
+                    Em Python, os blocos são definidos pela indentação e não por chaves.
+                </p>
+
+                <hr>
+
+                <h3>Estruturas de Repetição</h3>
+
+                <h4>For</h4>
+
+                <pre>
+for i in range(5):
+    print(i)
+</pre>
+
+                <p>
+                    O <b>for</b> é utilizado para repetir uma ação um determinado número de vezes.
+                </p>
+
+                <p>
+                    <b>range(5)</b> gera números de 0 até 4.
+                </p>
+
+                <h4>While</h4>
+
+                <pre>
+i = 0
+
+while i < 5:
+    print(i)
+    i += 1
+</pre>
+
+                <p>
+                    O <b>while</b> executa o bloco enquanto a condição for verdadeira.
+                </p>
+
+                <hr>
+
+                <h3>Funções</h3>
+
+                <pre>
+def soma(a, b):
+    return a + b
+</pre>
+
+                <p>
+                    <b>def</b> é a palavra utilizada para criar funções em Python.
+                </p>
+
+                <p>
+                    <b>return</b> retorna um valor para quem chamou a função.
+                </p>
+
+                <hr>
+
+                <h3>Listas</h3>
+
+                <pre>
+numeros = [10, 20, 30, 40, 50]
+</pre>
+
+                <p>
+                    As listas permitem armazenar vários valores em uma única variável.
+                </p>
+
+                <p>
+                    Cada elemento possui uma posição, começando pelo índice 0.
+                </p>
+
+                <hr>
+
+                <h3>Comentários</h3>
+
+                <pre>
+# Comentário de uma linha
+
+"""
+Comentário
+de várias linhas
+"""
+</pre>
+
+                <p>
+                    Comentários servem para explicar o código e facilitar sua manutenção.
+                </p>
+
+                <p>
+                    <b>#</b> cria um comentário de uma linha.
+                </p>
+            </td>
+        </tr>
+    </table><br><br><br><br>
+
+    <table align="center" width="900">
+        <tr>
+            <td>
+                <center>
+                    <h2>INSTRUÇÕES À PROGRAMAÇÃO EM JAVA</h2>
+                </center>
+
+                <h3>O que é Java?</h3>
+
+                <p>
+                    Java é uma linguagem de programação orientada a objetos muito utilizada no
+                    desenvolvimento de aplicativos, sistemas empresariais, aplicações web e
+                    aplicativos Android. Sua principal característica é a portabilidade,
+                    permitindo que um programa seja executado em diferentes sistemas operacionais.
+                </p>
+
+                <hr>
+
+                <h3>Estrutura Básica</h3>
+
+                <pre>
+public class Main {
+
+    public static void main(String[] args) {
+
+        System.out.println("Olá Mundo!");
+
+    }
+
+}
+</pre>
+
+                <p>
+                    <b>public class Main</b> - Define uma classe chamada Main.
+                </p>
+
+                <p>
+                    <b>main()</b> - Método principal do programa. A execução começa por ele.
+                </p>
+
+                <p>
+                    <b>System.out.println()</b> - Exibe mensagens na tela.
+                </p>
+
+                <p>
+                    <b>{ }</b> - Delimitam o início e o fim de blocos de código.
+                </p>
+
+                <hr>
+
+                <h3>Variáveis</h3>
+
+                <p>
+                    Variáveis armazenam informações que podem ser utilizadas durante a execução do programa.
+                </p>
+
+                <pre>
+int idade = 18;
+double altura = 1.75;
+String nome = "João";
+char letra = 'A';
+</pre>
+
+                <p>
+                    <b>int</b> - Armazena números inteiros.
+                </p>
+
+                <p>
+                    <b>double</b> - Armazena números decimais.
+                </p>
+
+                <p>
+                    <b>String</b> - Armazena textos.
+                </p>
+
+                <p>
+                    <b>char</b> - Armazena um único caractere.
+                </p>
+
+                <hr>
+
+                <h3>Tipos de Dados</h3>
+
+                <table border="1" width="100%">
+                    <tr>
+                        <th>Tipo</th>
+                        <th>Descrição</th>
+                    </tr>
+                    <tr>
+                        <td>int</td>
+                        <td>Números inteiros</td>
+                    </tr>
+                    <tr>
+                        <td>double</td>
+                        <td>Números decimais</td>
+                    </tr>
+                    <tr>
+                        <td>String</td>
+                        <td>Textos</td>
+                    </tr>
+                    <tr>
+                        <td>char</td>
+                        <td>Caracteres</td>
+                    </tr>
+                    <tr>
+                        <td>boolean</td>
+                        <td>Verdadeiro ou falso</td>
+                    </tr>
+                </table>
+
+                <hr>
+
+                <h3>Entrada de Dados</h3>
+
+                <pre>
+import java.util.Scanner;
+
+Scanner entrada = new Scanner(System.in);
+
+System.out.print("Digite seu nome: ");
+String nome = entrada.nextLine();
+</pre>
+
+                <p>
+                    <b>Scanner</b> - Classe utilizada para receber dados do usuário.
+                </p>
+
+                <p>
+                    <b>nextLine()</b> - Lê uma linha de texto digitada pelo usuário.
+                </p>
+
+                <hr>
+
+                <h3>Estruturas Condicionais</h3>
+
+                <pre>
+if(idade >= 18){
+    System.out.println("Maior de idade");
+}
+else{
+    System.out.println("Menor de idade");
+}
+</pre>
+
+                <p>
+                    <b>if</b> - Executa um bloco de código quando a condição é verdadeira.
+                </p>
+
+                <p>
+                    <b>else</b> - Executa um bloco quando a condição é falsa.
+                </p>
+
+                <p>
+                    <b>>=</b> - Operador que significa "maior ou igual".
+                </p>
+
+                <hr>
+
+                <h3>Estruturas de Repetição</h3>
+
+                <h4>For</h4>
+
+                <pre>
+for(int i = 1; i <= 5; i++){
+    System.out.println(i);
+}
+</pre>
+
+                <p>
+                    O <b>for</b> é utilizado quando sabemos quantas vezes uma repetição deve ocorrer.
+                </p>
+
+                <p>
+                    <b>i++</b> incrementa 1 ao valor da variável.
+                </p>
+
+                <h4>While</h4>
+
+                <pre>
+int i = 1;
+
+while(i <= 5){
+    System.out.println(i);
+    i++;
+}
+</pre>
+
+                <p>
+                    O <b>while</b> executa um bloco de código enquanto a condição for verdadeira.
+                </p>
+
+                <hr>
+
+                <h3>Métodos</h3>
+
+                <pre>
+public static int soma(int a, int b){
+    return a + b;
+}
+</pre>
+
+                <p>
+                    Métodos são blocos de código criados para executar tarefas específicas.
+                </p>
+
+                <p>
+                    <b>return</b> retorna um valor para quem chamou o método.
+                </p>
+
+                <hr>
+
+                <h3>Vetores</h3>
+
+                <pre>
+int[] numeros = {10, 20, 30, 40, 50};
+</pre>
+
+                <p>
+                    Vetores permitem armazenar vários valores do mesmo tipo.
+                </p>
+
+                <p>
+                    Cada posição do vetor possui um índice, começando em 0.
+                </p>
+
+                <hr>
+
+                <h3>Comentários</h3>
+
+                <pre>
+// Comentário de uma linha
+
+/*
+Comentário
+de várias linhas
+*/
+</pre>
+
+                <p>
+                    Comentários servem para explicar o código e não são executados pelo compilador.
+                </p>
+
+                <p>
+                    <b>//</b> cria um comentário de uma linha.
+                </p>
+
+                <p>
+                    <b>/* */</b> cria comentários de várias linhas.
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <center>
+        <a href=""><button>TESTE</button></a>
+    </center>
+    <br><br><br><br><br><br>
+
+</body>
+
+</html>
