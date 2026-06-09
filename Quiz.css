@@ -46,3 +46,16 @@ input[type="radio"] {
     margin-right: 10px;
     transform: scale(1.2);
 }
+pre {
+    background-color: #1e1e1e;
+    color: #00ff88;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-family: Consolas, monospace;
+    transition: 0.3s;
+}
+
+pre:hover {
+    transform: scale(1.02);
+}
