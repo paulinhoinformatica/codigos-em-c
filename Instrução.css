@@ -1,5 +1,8 @@
 body {
-    background-color: black;
+    background-image: url(imagens/f451188c-f335-4d3c-8627-f51dfe71c4d2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 15px;
 }

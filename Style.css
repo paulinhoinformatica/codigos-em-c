@@ -1,21 +1,28 @@
 body {
-    background-color: black;
+    background-image: url(imagens/f451188c-f335-4d3c-8627-f51dfe71c4d2.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
 }
 
 h1 {
     font-family: 'Courier New', Courier, monospace;
     color: white;
     font-size: 40px;
+    margin-bottom: 1px;
 }
 
 h2 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 30px;
+    font-size: 15px;
+    color: white;
+
 }
 
 h3 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 20px;
+    font-size: 30px;
+    text-align: center;
 }
 
 p {
