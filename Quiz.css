@@ -59,3 +59,15 @@ pre {
 pre:hover {
     transform: scale(1.02);
 }
+button {
+    width: 150px;
+    height: 50px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-radius: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    margin-right: 50px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
