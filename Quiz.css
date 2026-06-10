@@ -48,6 +48,21 @@ input[type="radio"] {
     margin-right: 10px;
     transform: scale(1.2);
 }
+
+label:has(input[type="radio"]:checked) {
+    background-color: #e8f0ff;
+    border-color: #2a5298;
+}
+
+input[type="radio"]:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+label:has(input[type="radio"]:disabled) {
+    cursor: not-allowed;
+}
+
 pre {
     background-color: #1e1e1e;
     color: #00ff88;
@@ -61,9 +76,10 @@ pre {
 pre:hover {
     transform: scale(1.02);
 }
+
 button {
-    width: 150px;
-    height: 50px;
+    width: 170px;
+    height: 70px;
     background-color: #ffffff;
     color: rgb(0, 0, 0);
     border: none;
@@ -72,4 +88,33 @@ button {
     cursor: pointer;
     margin-right: 50px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover {
+    background-color: #ffffff73;
+    transition: 0.3s;
+}
+
+button:active {
+    transform: scale(0.9);
+}
+
+.correta {
+    background-color: #d4edda !important;
+    border-color: #28a745 !important;
+}
+
+.errada {
+    background-color: #f8d7da !important;
+    border-color: #dc3545 !important;
+}
+
+.explicacao {
+    display: none;
+    margin-top: 15px;
+    padding: 12px;
+    border-radius: 10px;
+    background-color: #fff3cd;
+    border-left: 5px solid #ffc107;
+    color: #333;
 }
