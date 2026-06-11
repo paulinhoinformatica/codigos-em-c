@@ -118,3 +118,47 @@ button:active {
     border-left: 5px solid #ffc107;
     color: #333;
 }
+
+.card-resultado {
+    max-width: 650px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 15px;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    animation: aparecer 0.6s ease;
+}
+
+.card-resultado h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+.card-resultado h2 {
+    font-size: 35px;
+    margin: 10px 0;
+}
+
+.card-resultado p {
+    font-size: 18px;
+}
+
+.card-resultado img {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
