@@ -137,7 +137,7 @@ function corrigirQuiz() {
 
             pontos++;
 
-        } 
+        }
         else {
 
             respostaSelecionada.parentElement.classList.add("errada");
@@ -154,29 +154,34 @@ function corrigirQuiz() {
         }
     }
 
-  const resultado = document.getElementById("resultado");
+    const resultado = document.getElementById("resultado");
 
-let mensagem = "";
-let imagem = "";
+    let mensagem = "";
+    let imagem = "";
 
-if (pontos <= 4) {
-    imagem = "imagens/looking-for-pixel-perfect-upscale-or-proper-original-of-v0-1szjg608omed1.webp";
-    mensagem = "Não parece tão difícil, você realmente tentou fazer isso?";
-}
-else if (pontos <= 7) {
-    imagem = "imagens/661ff73f00df0.jpeg";
-    mensagem = "Você foi bem!! Se quiser investir tem futuro.";
-}
-else {
-    imagem = "imagens/eu-sabo-muito.png";
-    mensagem = "Você possui o sabimento na palma das mões!!";
-}
+    if (pontos <= 4) {
+        imagem = "imagens/looking-for-pixel-perfect-upscale-or-proper-original-of-v0-1szjg608omed1.webp";
+        mensagem = "Não parece tão difícil, você realmente tentou fazer isso?";
+    }
+    else if (pontos <= 7) {
+        imagem = "imagens/661ff73f00df0.jpeg";
+        mensagem = "Você foi bem!! Se quiser investir tem futuro.";
+    }
+    else {
+        imagem = "imagens/eu-sabo-muito.png";
+        mensagem = "Você possui o sabimento na palma das mões!!";
+    }
 
-resultado.innerHTML = `
-    <div class="card-resultado">
-        <img src="${imagem}" alt="Resultado">
-        <h2>${pontos}/10 acertos</h2>
-        <p>${mensagem}</p>
-    </div>
-`;
+    resultado.innerHTML = `
+        <div class="card-resultado">
+            <img src="${imagem}" alt="Resultado">
+            <h2>${pontos}/10 acertos</h2>
+            <p>${mensagem}</p>
+        </div>
+    `;
+
+    //Trava todos os radios após corrigir o quiz
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+        radio.disabled = true;
+    });
 }
